@@ -1,6 +1,17 @@
 
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home';
+
 function App() {
-  return <h1>Business Website Setup Complete</h1>;
+  return (
+    <>
+      <Header />
+      <Home />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
+

@@ -1,11 +1,9 @@
-import './Header.css';
-
 const Header = () => {
   return (
-    <header className="header">
-      <nav className="navbar">
-        <h2 className="logo">Business Website</h2>
-        <ul className="nav-links">
+    <header>
+      <nav>
+        <h2>Business Website</h2>
+        <ul>
           <li>Home</li>
           <li>Services</li>
           <li>Portfolio</li>
@@ -17,3 +15,5 @@ const Header = () => {
 };
 
 export default Header;
+
+
