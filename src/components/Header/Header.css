@@ -1,0 +1,31 @@
+.header {
+  background-color: var(--light-gray);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
