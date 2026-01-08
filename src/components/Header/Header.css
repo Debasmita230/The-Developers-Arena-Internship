@@ -14,9 +14,14 @@
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+  display: none;
+  flex-direction: column;
+  background-color: var(--light-gray);
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  padding: 1rem;
+  border-radius: 6px;
 }
 
 .nav-links li {
@@ -24,14 +29,32 @@
   font-weight: 500;
 }
 
+.nav-links.open {
+    display: flex;
+  }
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 
 @media (max-width: 768px) {
   .nav-links {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
   }
 }

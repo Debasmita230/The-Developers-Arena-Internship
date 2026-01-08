@@ -1,0 +1,24 @@
+.hero {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
