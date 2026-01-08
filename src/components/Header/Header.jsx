@@ -1,9 +1,11 @@
+import './Header.css';
+
 const Header = () => {
   return (
-    <header>
-      <nav>
-        <h2>Business Website</h2>
-        <ul>
+    <header className="header">
+      <nav className="navbar">
+        <h2 className="logo">Business Website</h2>
+        <ul className="nav-links">
           <li>Home</li>
           <li>Services</li>
           <li>Portfolio</li>
