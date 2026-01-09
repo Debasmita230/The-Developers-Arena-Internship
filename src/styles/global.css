@@ -24,3 +24,9 @@ section {
 h1, h2, h3 {
   color: var(--secondary-color);
 }
+
+a:focus,
+button:focus {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
+}

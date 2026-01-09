@@ -30,23 +30,29 @@ const Contact = () => {
       <h1>Contact Us</h1>
 
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-        />
+        <label htmlFor="name">Name</label>
+            <input
+             id="name"
+             type="text"
+             name="name"
+             placeholder="Your Name"
+             value={formData.name}
+             onChange={handleChange}
+            />
+
 
         <br /><br />
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-        />
+        <label htmlFor="email">Email</label>
+            <input
+             id="email"
+             type="email"
+             name="email"
+             placeholder="Your Email"
+             value={formData.email}
+             onChange={handleChange}
+           />
+
 
         <br /><br />
 

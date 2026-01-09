@@ -16,9 +16,14 @@ const Header = () => {
       <nav className="navbar">
         <h2 className="logo">Business Website</h2>
 
-        <button className="menu-btn" onClick={toggleMenu}>
-          ☰
-        </button>
+        <button
+          className="menu-btn"
+          onClick={toggleMenu}
+          aria-label="Toggle navigation menu"
+        >
+        ☰
+       </button>
+
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/services">Services</Link></li>
