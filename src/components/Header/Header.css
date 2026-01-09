@@ -14,7 +14,8 @@
 }
 
 .nav-links {
-  display: none;
+  display: flex;
+  gap: 2rem;
   flex-direction: column;
   background-color: var(--light-gray);
   position: absolute;

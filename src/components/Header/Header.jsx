@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
    const [menuOpen, setMenuOpen] = useState(false);
@@ -18,10 +20,10 @@ const Header = () => {
           ☰
         </button>
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <li>Home</li>
-          <li>Services</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/portfolio">Portfolio</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
     </header>
